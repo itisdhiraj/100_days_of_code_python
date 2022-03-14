@@ -1,6 +1,6 @@
-# Write your code below this line 👇
 #Data Types
-
+print("Hello"[1])
+print("Hello"[-1])
 #Calculate the BMI
 # 🚨 Don't change the code below 👇
 print("We'll calculate Your BMI")
@@ -43,14 +43,17 @@ two_digit_number = input("Type a two digit number: ")
 
 ####################################
 #Write your code below this line 👇
-
-digit_number = int(two_digit_number)
-if 9 < digit_number < 100:
-  a  = digit_number // 10
-  b = digit_number % 10
-  sum_of_digit = a + b
-  print(sum_of_digit)
-else:
-  print("Please enter two digit number")
+try:
+  digit_number = int(two_digit_number)
+  if 9 < digit_number < 100:
+    a  = digit_number // 10
+    b = digit_number % 10
+    sum_of_digit = a + b
+    print(sum_of_digit)
+  else:
+    print("Please enter two digit number")
+except ValueError:
+  print("Entered value is not a number. Please Enter the two digit integer value")
+  
 
 
