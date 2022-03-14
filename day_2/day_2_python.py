@@ -1,1 +1,56 @@
 # Write your code below this line 👇
+#Data Types
+
+#Calculate the BMI
+# 🚨 Don't change the code below 👇
+print("We'll calculate Your BMI")
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+wt = int(weight)
+ht = float(height)
+bmi = wt // (ht * ht)
+#bmi = int(weight) // (int(height) * int(height))
+print(int(bmi))
+
+
+#Calculate life from 90 years in Days, weeks and month
+# 🚨 Don't change the code below 👇
+print("Your life in week and days left from 90 years")
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+max_age_year = 90
+max_age_month = 90 * 12
+max_age_week = 90 * 52
+max_age_days = 90 * 365
+age_num = int(age)
+age_year = max_age_year - age_num
+age_month = max_age_month - (age_num * 12)
+age_week = max_age_week - (age_num * 52)
+age_days = max_age_days - (age_num * 365)
+
+print(f"You have {age_days} days, {age_week} weeks, {age_month} months, and {age_year} years left.")
+
+# add the digit of 2 digit number
+# 🚨 Don't change the code below 👇
+print("Addition of 2 digit number")
+two_digit_number = input("Type a two digit number: ")
+# 🚨 Don't change the code above 👆
+
+####################################
+#Write your code below this line 👇
+
+digit_number = int(two_digit_number)
+if 9 < digit_number < 100:
+  a  = digit_number // 10
+  b = digit_number % 10
+  sum_of_digit = a + b
+  print(sum_of_digit)
+else:
+  print("Please enter two digit number")
+
+
