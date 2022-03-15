@@ -1,6 +1,6 @@
 #Check the eligiblity to ride rollercoaster
 print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+height = float(input("What is your height in cm? "))
 if height > 120:
   print("You are allow to Ride. Have fun. ")
 else:
@@ -45,6 +45,21 @@ elif 30 <= bmi < 35:
     print(f"Your BMI is {bmi}, you are obese.")
 else:
     print(f"Your BMI is {bmi}, you are clinically obese.")
+
+# program that works out whether if a given year is a leap year
+# 🚨 Don't change the code below 👇
+print("To Check if a given year is a leap year")
+year = int(input("Which year do you want to check? "))
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+if year % 100 == 0 and year % 400 != 0:
+    print("Not Leap year.")
+elif year % 400 == 0 or year % 4 == 0:
+    print("Leap year.")
+else:
+    print("Not leap year.")
 
 
 
