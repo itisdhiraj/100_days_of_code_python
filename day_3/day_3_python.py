@@ -62,7 +62,88 @@ else:
     print("Not leap year.")
 
 
+# build an automatic pizza order program.
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
 
+#Write your code below this line 👇
+small_Pizza = 15
+medium_Pizza = 20
+large_Pizza = 25
+pepperoni_small = 2
+pepperoni_other = 3
+ext_cheese = 1
+
+if size == "S" or size.lower() == "s":
+    if add_pepperoni == "Y":
+        if extra_cheese == "Y":
+            amount = small_Pizza + pepperoni_small + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = small_Pizza + pepperoni_small
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    elif add_pepperoni == "N":
+        if extra_cheese == "Y":
+            amount = small_Pizza + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = small_Pizza
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    else:
+        print("Please enter Correct Input for pepperoni. ")
+
+elif size == "M" or size.lower() == "m":
+    if add_pepperoni == "Y":
+        if extra_cheese == "Y":
+            amount = medium_Pizza + pepperoni_other + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = medium_Pizza + pepperoni_other
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    elif add_pepperoni == "N":
+        if extra_cheese == "Y":
+            amount = medium_Pizza + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = medium_Pizza
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    else:
+        print("Please enter Correct Input for pepperoni. ")
+elif size == "L" or size.lower() == "l":
+    if add_pepperoni == "Y":
+        if extra_cheese == "Y":
+            amount = large_Pizza + pepperoni_other + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = large_Pizza + pepperoni_other
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    elif add_pepperoni == "N":
+        if extra_cheese == "Y":
+            amount = large_Pizza + ext_cheese
+            print(f"Your final bill is: ${amount}.")
+        elif extra_cheese == "N":
+            amount = large_Pizza
+            print(f"Your final bill is: ${amount}.")
+        else:
+            print("Enter Correct input for Cheese.")
+    else:
+        print("Please enter Correct Input for pepperoni. ")
+else:
+    print("Please enter correct input.")
 
 
 
