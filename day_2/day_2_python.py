@@ -9,11 +9,19 @@ weight = input("enter your weight in kg: ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-wt = int(weight)
+wt = float(weight)
 ht = float(height)
-bmi = wt // (ht * ht)
+bmi = wt / (ht * ht)
 #bmi = int(weight) // (int(height) * int(height))
-print(int(bmi))
+print(bmi)
+if bmi <= 18.5:
+  print("you are underweight")
+elif 18.5 < bmi <= 24.9:
+  print("You have normal weight")
+elif 24.9 < bmi < 30:
+  print("You are overweight")
+else:
+  print("You are obese")
 
 
 #Calculate life from 90 years in Days, weeks and month
