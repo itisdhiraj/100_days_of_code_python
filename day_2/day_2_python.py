@@ -1,36 +1,35 @@
-#Data Types
+# Data Types
 print("Hello"[1])
 print("Hello"[-1])
-#Calculate the BMI
+# Calculate the BMI
 # 🚨 Don't change the code below 👇
 print("We'll calculate Your BMI")
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 wt = float(weight)
 ht = float(height)
 bmi = wt / (ht * ht)
-#bmi = int(weight) // (int(height) * int(height))
-print(bmi)
+# bmi = int(weight) // (int(height) * int(height))
+#print(bmi)
 if bmi <= 18.5:
-  print("you are underweight")
+    print(f"Your BMI is {bmi}, and you are underweight.")
 elif 18.5 < bmi <= 24.9:
-  print("You have normal weight")
+    print(f"Your BMI is {bmi}, and You have normal weight.")
 elif 24.9 < bmi < 30:
-  print("You are overweight")
+    print(f"Your BMI is {bmi}, and You are overweight.")
 else:
-  print("You are obese")
+    print(f"Your BMI is {bmi}, and You are obese.")
 
-
-#Calculate life from 90 years in Days, weeks and month
+# Calculate life from 90 years in Days, weeks and month
 # 🚨 Don't change the code below 👇
 print("Your life in week and days left from 90 years")
 age = input("What is your current age?")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 max_age_year = 90
 max_age_month = 90 * 12
 max_age_week = 90 * 52
@@ -50,18 +49,18 @@ two_digit_number = input("Type a two digit number: ")
 # 🚨 Don't change the code above 👆
 
 ####################################
-#Write your code below this line 👇
+# Write your code below this line 👇
 try:
-  digit_number = int(two_digit_number)
-  if 9 < digit_number < 100:
-    a  = digit_number // 10
-    b = digit_number % 10
-    sum_of_digit = a + b
-    print(sum_of_digit)
-  else:
-    print("Please enter two digit number")
+    digit_number = int(two_digit_number)
+    if 9 < digit_number < 100:
+        a = digit_number // 10
+        b = digit_number % 10
+        sum_of_digit = a + b
+        print(sum_of_digit)
+    else:
+        print("Please enter two digit number")
 except ValueError:
-  print("Entered value is not a number. Please Enter the two digit integer value")
-  
+    print("Entered value is not a number. Please Enter the two digit integer value")
+
 
 
