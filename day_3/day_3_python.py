@@ -3,6 +3,13 @@ print("Welcome to the rollercoaster!")
 height = float(input("What is your height in cm? "))
 if height > 120:
   print("You are allow to Ride. Have fun. ")
+  age = int(input("Enter the age : "))
+  if age <= 12:
+    print("You have to pay 5$")
+  elif 12 < age < 18:
+    print("You have to pay 7$")
+  else:
+    print("You have to pay 12$")
 else:
   print("Sorry, Your height is less than or equal to 120 cm. You ared not allow to ride.")
 
@@ -144,6 +151,3 @@ elif size == "L" or size.lower() == "l":
         print("Please enter Correct Input for pepperoni. ")
 else:
     print("Please enter correct input.")
-
-
-
