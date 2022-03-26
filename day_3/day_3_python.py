@@ -11,7 +11,7 @@ if height > 120:
   else:
     print("You have to pay 12$")
 else:
-  print("Sorry, Your height is less than or equal to 120 cm. You ared not allow to ride.")
+  print("Sorry, Your height is less than or equal to 120 cm. You are not allow to ride.")
 
 #Write a program that works out whether if a given number is an odd or even number.
 # 🚨 Don't change the code below 👇
